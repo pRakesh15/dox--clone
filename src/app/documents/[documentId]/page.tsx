@@ -9,11 +9,11 @@ const page=async({params}: documentProps) =>{
   const {documentId}=await params   //call by the params using await
  
   return (
-    <div>document iid is {documentId}
-    <div>
+   
+    <div className='max-h-screen bg-[#FAFBFD]'>
       <Editor/>
     </div>
-    </div>
+
   )
 }
 
