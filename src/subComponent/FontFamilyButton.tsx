@@ -20,8 +20,8 @@ export const FontFamilyButton = () => {
                 <button className='h-7 w-[120px] shrink-0 flex items-center justify-between rounded-sm hover:bg-neutral-200/80 px-1.5 overflow-hidden text-sm'>
                     <span className='truncate'>
                         {editor?.getAttributes("textStyle").fontfamily || "Arial"}
-                        <ChevronDownIcon className='ml-2 size-4 shrink-0' />
                     </span>
+                    <ChevronDownIcon className='ml-2 size-4 shrink-0' />
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className='p-1 flex flex-col gap-y-1'>

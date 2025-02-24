@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { useEditorStore } from '@/store/use-editor-store';
 import { FontFamilyButton } from '@/subComponent/FontFamilyButton';
 import { HeadingLevelButton } from '@/subComponent/HeadingLevelButton';
+import TextColorButton from '@/subComponent/TextColorButton';
 import { BoldIcon, ChevronDownIcon, ItalicIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SpellCheckIcon, UnderlineIcon, Undo2Icon } from 'lucide-react';
 
 interface ToolbarButtonProps {
@@ -134,6 +135,9 @@ function Toolbar() {
                     <ToolbarButton key={item.label} {...item} />
                 ))
             }
+            <Separator orientation='vertical' className='h-6 bg-neutral-300' />
+
+            <TextColorButton/>
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
             {
                 sections[2].map((item) => (
