@@ -6,6 +6,7 @@ import { useEditorStore } from '@/store/use-editor-store';
 import { FontFamilyButton } from '@/subComponent/FontFamilyButton';
 import { HeadingLevelButton } from '@/subComponent/HeadingLevelButton';
 import { HighliteColorButton } from '@/subComponent/HighliteColorButton';
+import ImageButton from '@/subComponent/ImageButton';
 import LinkButton from '@/subComponent/LinkButton';
 import TextColorButton from '@/subComponent/TextColorButton';
 import { BoldIcon, ChevronDownIcon, ItalicIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SpellCheckIcon, UnderlineIcon, Undo2Icon } from 'lucide-react';
@@ -143,6 +144,7 @@ function Toolbar() {
             <HighliteColorButton/>
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
             <LinkButton/>
+            <ImageButton/>
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
             {
                 sections[2].map((item) => (
